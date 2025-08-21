@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendar Cita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6e6e6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff9d6;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #e53935;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffeb3b;
+      font-size: 14px;
+      color: #d32f2f;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #e53935;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #c62828;
+    }
+
+    .top-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .top-links a {
+      color: #e53935;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .perfil {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .perfil img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .perfil p {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-links">
+      <a href="#">Ver Historial</a>
+    </div>
+    <h1>Agendar Cita</h1>
+    
+    <form>
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha" placeholder="Selecciona una fecha">
+      
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" placeholder="Selecciona una hora">
+      
+      <button type="submit" class="btn">Reservar</button>
+    </form>
+    
+    <div class="perfil">
+      <img src="https://via.placeholder.com/60x60.png?text=👤" alt="Icono de perfil">
+      <p>Perfil</p>
+    </div>
+  </div>
+</body>
+</html>
